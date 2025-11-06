@@ -4,7 +4,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur supports-[backdrop-filter]:bg-white/60 bg-white/70 border-b border-black/5">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-        <a href="#hero" className="flex items-center gap-2 group">
+        <a href="#home" className="flex items-center gap-2 group">
           <div className="h-9 w-9 rounded-xl bg-gradient-to-tr from-indigo-500 via-fuchsia-500 to-amber-400 shadow-sm" />
           <div className="leading-tight">
             <div className="font-semibold tracking-tight text-slate-900 group-hover:text-indigo-700 transition-colors">
@@ -14,8 +14,11 @@ export default function Navbar() {
           </div>
         </a>
         <nav className="hidden md:flex items-center gap-6 text-sm">
+          <a href="#home" className="text-slate-700 hover:text-slate-900">Home</a>
+          <a href="#chi-siamo" className="text-slate-700 hover:text-slate-900">Chi siamo</a>
           <a href="#servizi" className="text-slate-700 hover:text-slate-900">Servizi</a>
-          <a href="#processo" className="text-slate-700 hover:text-slate-900">Metodo</a>
+          <a href="#consulenza" className="text-slate-700 hover:text-slate-900">Consulenza</a>
+          <a href="#portafolio" className="text-slate-700 hover:text-slate-900">Portafolio</a>
           <a href="#contatti" className="text-slate-700 hover:text-slate-900">Contatti</a>
         </nav>
         <a href="tel:3510519502" className="inline-flex items-center gap-2 text-sm font-medium px-3 py-2 rounded-lg bg-slate-900 text-white hover:bg-slate-800">

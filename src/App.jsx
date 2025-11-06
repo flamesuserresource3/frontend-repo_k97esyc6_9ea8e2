@@ -1,19 +1,13 @@
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Process from "./components/Process";
-import Contact from "./components/Contact";
+import PageRouter from "./components/PageRouter";
 
 function App() {
   return (
-    <div className="font-inter antialiased bg-white text-slate-900">
+    <div className="font-inter antialiased bg-white text-slate-900 min-h-screen flex flex-col">
       <Navbar />
-      <main>
-        <Hero />
-        <Services />
-        <Process />
-        <Contact />
-      </main>
+      <div className="flex-1">
+        <PageRouter />
+      </div>
     </div>
   );
 }
