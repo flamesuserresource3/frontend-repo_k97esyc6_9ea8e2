@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import PageRouter from "./components/PageRouter";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <div className="flex-1">
         <PageRouter />
       </div>
+      <Footer />
     </div>
   );
 }
